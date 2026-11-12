@@ -32,8 +32,9 @@ Additional dependencies will be introduced as the project evolves.
 Create and activate the virtual environment:
 
 ```bash
-python3.12 -m venv .venv
-source .venv/bin/activate
+conda create -n scientific-rag python=3.12 pip
+conda activate scientific-rag
+python -m pip install -e ".[dev]"
 ```
 
 Install the project and development dependencies:
